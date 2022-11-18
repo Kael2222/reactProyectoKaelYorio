@@ -1,0 +1,77 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.navbar{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+ul{
+  display: flex;
+ list-style: none;
+}
+
+li{
+  margin-left:15px;
+}
+
+.links{
+  padding: 4px 6px;
+  text-decoration: none;
+  color: white;
+  margin: 0px 10px;
+}
+
+.active{
+  border: 1 px solid white;
+  padding: "4px 6px";
+  border-radius: 4px;
+}
+
+.main{
+  min-height: 88vh;
+  margin: 20px;
+}
+
+.saludo{
+  display: flex;
+  justify-content: center;
+  font-size: 30px ;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 50px;
+  font-style: oblique;
+}
+
+.contador{
+  display: flex;
+  text-align: center;
+}
+
+.material-symbols-outlined{
+  color: burlywood;
+}
+
+.span-carrito-de-compras {
+  font-size: 1em;
+  margin-right: 20px;
+}
+
+.circulo-productos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 1.6em;
+  height: 1.5em;
+  position: absolute;
+  transform: translate(20%,-50%);
+  background-color: red;
+  border-radius: 50%;
+}
