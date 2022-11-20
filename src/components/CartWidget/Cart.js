@@ -5,9 +5,19 @@ import CartItem from './CartItem';
 
 
 
+
 export default function Cart() {
 
   const {cart, montoTotalEnElCarrito, removerDisco} = useContext(CartContext)
+
+
+
+  //const handleClick = () => {
+   // const baseDeDatos = getFirestore();
+   // const ordersCollection = collection(baseDeDatos, "orders");
+   // addDoc(ordersCollection, order)
+   // .then(({ id }) => console.log(id))
+ // }
 
   if (!cart.length) return (<h3>Tu Carrito está vacío!, por favor considerá ver nuestros <Link to='/'>productos</Link></h3>)
 
