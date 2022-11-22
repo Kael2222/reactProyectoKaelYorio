@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { getItems } from '../services/firebaseConfig'
 
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
 
     
     const [data, setData] = useState([]) //Discos array
@@ -24,14 +24,12 @@ const ItemListContainer = ({greeting}) => {
 
       
     return(
-        <>
-            {/*<p className="saludo">{greeting}</p> -----> (We don't need this)*/}
-
-            {data.length === 0 ? 
+       <div className="itemListContenedor">
+        {data.length === 0 ? 
                 <h3>Cargando Discos...</h3> : 
                 <ItemList data={data} />
             } 
-        </>
+       </div>
         
     )
 }

@@ -34,9 +34,9 @@ const ItemDetailContainer = () => {
         return (<div><FadeLoader /></div>)
     }
     return(
-        <>
-            <ItemDetail data={dataDetail} />
-        </>
+        <div className="itemDetailContenedor">
+             <ItemDetail data={dataDetail} />
+        </div>
         
     )
 }
