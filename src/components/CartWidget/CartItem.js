@@ -20,7 +20,7 @@ export default function CartItem(props) {
           </td>
           <td>{cantidad}</td>
           <td>${precio}</td>
-          <td><button onClick={() => removerDisco(id)}>Remove</button></td>
+          <td><button className='btn-delete' onClick={() => removerDisco(id)}>Eliminar</button></td>
     </tr>
   )
 }

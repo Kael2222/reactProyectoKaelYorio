@@ -30,7 +30,7 @@ const App = () => {
                />
                <Route path='/detail/:idDisco' element= { <ItemDetailContainer />} />
                <Route path='/cart' element= {<Cart/>} />
-               <Route path='/Contacto' element={<Form />} /> 
+               <Route path='/checkout' element={<Form />} /> 
             </Routes>
             <Footer />
          </Provider>
@@ -43,8 +43,5 @@ const App = () => {
 
 export default App;
 
-      
-         
-        
-
+  
 

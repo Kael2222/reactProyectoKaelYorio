@@ -7,18 +7,6 @@ const Provider = (props) => {
 
     const [cart, setCart] = useState([]);
 
-
-    const cantidadDiscosEnElCarrito = cart.reduce((acumulador, disco) => acumulador + disco.cantidad, 0); //Elementos en el carro
-    
-    const montoTotalEnElCarrito = cart.reduce((acumulador, disco) => acumulador + (disco.cantidad * disco.precio), 0); //Total suma
-
-    const limpiarCarrito = () => setCart([]) //Empty Cart
-
-    const isInCart = (id) => cart.find(product => product.id === id) //? true : false;
-
-    const removerDisco = (id) => setCart(cart.filter(product => product.id !== id));
-
-
     //Add
     const agregarAlCarrito = (data, cantidad) => {
       
@@ -32,6 +20,17 @@ const Provider = (props) => {
             setCart([...cart, {...data,cantidad}])
         }
     }
+
+
+    const cantidadDiscosEnElCarrito = cart.reduce((acumulador, disco) => acumulador + disco.cantidad, 0); //Elementos en el carro
+    
+    const montoTotalEnElCarrito = cart.reduce((acumulador, disco) => acumulador + (disco.cantidad * disco.precio), 0); //Total suma
+
+    const limpiarCarrito = () => setCart([]) //Empty Cart
+
+    const isInCart = (id) => cart.find(product => product.id === id) //? true : false;
+
+    const removerDisco = (id) => setCart(cart.filter(product => product.id !== id));
 
     
 

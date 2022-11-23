@@ -18,5 +18,14 @@ export const baseDeDatos = getFirestore(app)
 const discosRef = collection(baseDeDatos, 'discos')
 
 
-export const getItems = (nombreCategoria) => getDocs(nombreCategoria? query(discosRef, where('categoria','==', nombreCategoria)) : discosRef)
-export const getItem =(diskId) => getDoc(doc(discosRef, diskId));
+export const getItems = (nombreCategoria) => { 
+    
+      if (nombreCategoria) {
+        return getDocs(query(discosRef, where('categoria','==', nombreCategoria)))
+      }
+      return getDocs(discosRef)
+}
+
+export const getItem =(diskId) => {
+      return getDoc(doc(discosRef, diskId));
+}

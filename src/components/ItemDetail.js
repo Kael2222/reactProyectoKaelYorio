@@ -18,7 +18,7 @@ const ItemDetail = ({data}) => {
 
 
   return (
-    <div>
+    <div className='itemDetailContenedor'>
         <div>
             <img src={data.img} alt="" width={500} height={500}/>
             <div>
