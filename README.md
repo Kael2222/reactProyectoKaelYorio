@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+<br />
+<div align="center">
+  <a href="https://github.com/jlrisso/react-e-commerce-website">
+    <img src="https://openmoji.org/data/color/svg/1F6D2.svg" alt="Logo" width="80" height="80">
+  </a>
+  <h3 align="center">E-CommerceReactKaelYorio</h3>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <p align="center">
+     E-commerce tienda de discos: visualización de productos, navegación por categorías, opcion de cargar discos al carrito, etc.
+    <br />
+    <br />
+    <a href= "https://github.com/Kael2222/reactProyectoKaelYorio">Ver repo</a>
+  </p>
+</div>
+<br />
+<br />
+<br />
 
-## Available Scripts
 
-In the project directory, you can run:
+# Tabla de contenidos
+- [Acerca del Proyecto](#acerca-del-proyecto)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+  * [Página de inicio o Home](#inicio-o-home)
+  * [Página detalle del producto](#página-detalle-del-producto)
+  * [Página carrito de compras](#página-carrito-de-compras)
+  * [Página de checkout](#página-de-checkout)
+  * [Página de compra exitosa](#página-de-compra-exitosa)
+- [Tecnologías aplicadas](#tecnologías-aplicadas)
+- [Comenzando](#comenzando)
+  * [Pre-requisitos](#pre-requisitos)
+  * [Instalación](#instalación)
+  * [Ejecución](#ejecutando-la-aplicación)
+- [Autor](#autor) 
+- [Licencia](#licencia) 
+- [Mostranos tu apoyo](#mostranos-tu-apoyo) 
 
-### `npm start`
+<br />
+<br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Acerca del Proyecto
+Proyecto armado como trabajo final para el curso de react ,dentro de la carrera de desarrollo FrontEnd de Coderhouse.El proyecto es un e-commerce de discos, que consta de un home donde se encuentran todos los discos ,dos categorias nacionales e internacionales,un carrito y una categoria inhabilitada para habilitar a futuro de ser necesario. La aplicacion permite que el usuario pueda sumar a su carrito la cantidad de discos que desee,obtenga un precio total de la compra y luego un formulario donde completar con sus datos personales como nombre,apellido,direccion ,email y su validacion .  
+<br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Uso del servicio de Firebase & Firestone.
+<br/>
 
-### `npm run build`
+## Estructura del Proyecto.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### tienda de discos / Home
+Esta es la primera página a la que el usuario accede cuando ingresa al sitio. La misma muestra un listado de todos los discos disponibles. En la parte superior se encuentra el menú y dentro de éste, en el costado derecho, se ubica un desplegable, de nombre: "Categories", con las diferentes categorías de productos.  
+<br/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Página detalle del producto
+Muestra el detalle del producto que ha sido seleccionado previamente por el usuario, ya sea desde el Home o desde alguna de las categorías. A través de esta vista el usuario accede a una información más detallada del producto, como puede ser: nombre, descripción, precio, etc. A su vez posibilita que el usuario pueda agregar el ítem al carrito de compras, seleccionando la cantidad deseada y luego clickeando el botón correspondiente.
+<br/>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Página carrito de compras
+Muestra información del producto o productos que el usuario compro con su cantidad y total correspondiente. Opcion de remover un producto o vaciar el carrito en su totalidad.
+<br/>
+<br/>
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Página de checkout
+Formulario que debe completarse cuando se termina la compra.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<br/>
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+### Página de compra exitosa
+Muestra la confirmación de la compra con un numero de orden unico .
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+# Tecnologías aplicadas
+Para la construcción de este proyecto se utilizaron múltiples conceptos, en conjunto con una vasta cantidad de librerías. Por nombrar algunas:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* [React.js](https://reactjs.org/)
+* [React Spinners](https://www.npmjs.com/package/react-spinners)
+* [React Router DOM](https://www.npmjs.com/package/react-router-dom)
+* [Firebase - Firestore](https://firebase.google.com/)
+* **React Hooks**
+* **Context**
+* **Forms**
+* **GIT**
+* **CSS**
 
-### `npm run build` fails to minify
+<br />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+

@@ -7,8 +7,9 @@ import { getItems } from '../services/firebaseConfig'
 const ItemListContainer = ({greeting}) => {
 
     
-    const [data, setData] = useState([]) //Discos array
+    const [data, setData] = useState([]) 
     const {nombreCategoria} = useParams(); 
+    const [itemsLoading, setItemsLoading] = useState(true)
 
     //Main function 4 getting disks
     useEffect(() => {
@@ -19,16 +20,18 @@ const ItemListContainer = ({greeting}) => {
           .catch( errorMessage => {
               console.error(errorMessage);
           })
+          .finally(() => {
+            setItemsLoading(false);
+          })
           
     }, [nombreCategoria]);
 
+    if(itemsLoading) return <h3>Cargando discos...</h3>
+
       
     return(
-       <div className="itemListContenedor">
-         {data.length === 0 ? 
-                <h3>Cargando Discos...</h3> : 
-                <ItemList data={data} />
-            } 
+        <div className="itemListContenedor">
+          <ItemList data={data} />
        </div>
     )
 }

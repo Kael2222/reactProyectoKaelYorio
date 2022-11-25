@@ -12,7 +12,6 @@ const Item = ( {data} ) => {
       <h3>${data.precio}.-</h3>
     </article> 
     <Link to={`/detail/${data.id}`} >Ver Detalle</Link>
-    {/*<Link to={`/cart/${data.id}`} >ir al carrito</Link>*/}
     </div>
   )
 }
